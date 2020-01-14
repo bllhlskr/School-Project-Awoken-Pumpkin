@@ -6,6 +6,7 @@ Our project is a classic, simple but effective videogame based on the videogame 
 
 While we did get inspired by both Terraria’s Pumpkin Moon Event and Plants vs Zombies, we kept our originality by creating our very own graphics for the game. The game also has a time limit for each level and when the time limit ends, the attackers stop attacking. The game has a currency called “wheat” and defenders can only be spawned if there is enough wheat. If all attackers are killed before the health bar is 0, the player proceeds to next level. If health bar reaches 0 before the attackers are killed, the level is lost. The health bar doesn’t decrase if the defenders die, but it decrases when the attackers pass the defenders and reach the farm, making the goal to focus on protecting only the farm. There are 3 attackers and 3 defenders in the game. The player can spawn 3 defenders and wheat, when wheat is spawned it grows after a while and can be harvested to add more wheat currency to player strategically. The attackers spawn at random places and random times, making the game harder and more unexpectable.
 
+![](images/Picture1.png)
 
 
 
@@ -17,6 +18,7 @@ While we did get inspired by both Terraria’s Pumpkin Moon Event and Plants vs 
 
 
 Methods Used in the Project:
+
 We used Unity Game Development Kit and C# language while creating this software, and Adobe Photoshop for its graphics (sprites, models and animations) We also used Unity to turn models into animatios. We used C# method IEnumerator to delay the spawns of the attackers. Scripts are done in Unity. General OOP technics has been used a lot in the application, there are aroun 20 classes in the code. Unity Lifecycles have been also used.
 Project Details
  
@@ -24,21 +26,27 @@ Project Details
 
 A: Main Menu 
 It has 3 buttons: Start Game, Options, Exit. Start Game simply starts the game from first level. Options button opens the options menu and exit game closes the application. Menu is also accessible from pause menu or after finishing the game on the credits screen.
+![](images/picture4.png)
  
 B: Main Options 
 Accessible from main menu only, it lets the player set the volume and difficulty of the game. Each of those have one bar. It has a back button to return main menu. Difficulty sets the quantity and frequency of attacker spawn. Defaults button sets all settings to default.
  
 
 C: The Game 
+![](images/Picture2.png)
 The game as mentioned in the abstract part has 5 levels, each level being harder than the previous one. All defenders and wheat are usable since the first level but only 2 out of 3 types of attackers are available at level 1. After level 2, all attacker types begin attacking. 3 types of defenders are Farmer Mage, Melee Farmer and Muskeeter Farmer. Mages and Muskeeters do long ranged attacks while Melee Farmer has only 1 range. The Mage creates and throws fireballs at the attackers. The muskeeter, as the name leads, has a musket which he fires it at the attackers. Melee farmer has a pitchfork and he hits the attackers with it at point blank range. All defenders have different health. Melee Farmer has 100, Muskeeter has 200 and Mage has 250. They also deal different amounts of damage; Melee Farmer deals 20 damage, Muskeeter Farmer deals 30 damage and Farmer Mage deals the most damage of 40, therefore we made the wheat costs of the farmers according to it. The player can also place wheats into the place for 70 wheat cost, and harvest it for 40 wheat each time it’s harvest time comes. That makes it strategically important for wheat, it’s also the only way to get more wheat than the wheat given at the beginning of level. The attackers are Ghosty (a floating ghost with arms), Zombkin (a walking zombie) and Hound (a running hell hound). Ghosty and Zombkin attack from level 1 but Hound is only available after level 2. This was decided like this because the speed of Hound is much faster than Ghosty and Zombkin, since it’s running. After each level, the amount of wheat given to the player increases as well as the amount and frequency of enemy spawn, making the fight more fair but more challenging. But still in all levels, the frequency of the attacker spawn is completely random, making the game stay always unexpectable. Zombkin and Ghosty use their arms to attack while Hound uses a bite animation to attack.
 As it can be seen from the ingame screenshot below, the time bar is on top right, farm health is on middle top, wheat amount is on bottom left and defender/wheat spawn tabs are on bottom middle. When the wheat amount is 0, the player cannot spawn any defenders or harvestable wheat. When the farm health is 0, the game is lost. When the timer expires the attackers stop spawning, however rest of the attackers need to be eliminated in order for the level to be won. As it can be seen, the background of the game and all the details such as the trees, pumpkins and cracked dark yellow ground are halloween-related, so that the feel of halloween is fully injected into the atmosphere of the game. 
  
-D: ESC Pause Options Menu 
+D: ESC Pause Options Menu
+![](images/picture4.png)
 Accessible by hitting ESC while in-game. Player is able to edit volume and difficulty from this menu, as well as go back to main menu in case they want to exit the game. Defaults button sets the options back to default.
  
 
 
-E: Credits Screen 
+E: Credits Screen
+
+![](images/picture3.png)
+
 Available after all 5 levels of the game are finished, it automatically pops up after level last is completed. It has a button to return to main menu. 
 
 Literature Review:
